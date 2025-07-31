@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlipMart - Online Shopping ke liye Best Destination</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <h1><i class="fas fa-shopping-cart"></i> FlipMart</h1>
+                </div>
+                
+                <div class="search-container">
+                    <input type="text" placeholder="Search for products, brands and more" class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="header-actions">
+                    <div class="login-btn">
+                        <i class="fas fa-user"></i>
+                        <span>Login</span>
+                    </div>
+                    <div class="more-dropdown">
+                        <span>More <i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Cart</span>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-mobile-alt"></i> Electronics</a></li>
+                <li><a href="#"><i class="fas fa-tshirt"></i> Fashion</a></li>
+                <li><a href="#"><i class="fas fa-home"></i> Home & Furniture</a></li>
+                <li><a href="#"><i class="fas fa-heartbeat"></i> Beauty</a></li>
+                <li><a href="#"><i class="fas fa-dumbbell"></i> Sports</a></li>
+                <li><a href="#"><i class="fas fa-book"></i> Books</a></li>
+                <li><a href="#"><i class="fas fa-car"></i> Automotive</a></li>
+                <li><a href="#"><i class="fas fa-utensils"></i> Grocery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=400&fit=crop" alt="Electronics Sale">
+                <div class="slide-content">
+                    <h2>Electronics Sale</h2>
+                    <p>Up to 80% Off on Smartphones & Laptops</p>
+                    <button class="cta-btn">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=200&h=200&fit=crop" alt="Mobile">
+                    <h3>Mobiles</h3>
+                    <p>Up to 40% Off</p>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=200&h=200&fit=crop" alt="Fashion">
+                    <h3>Fashion</h3>
+                    <p>Min 50% Off</p>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=200&h=200&fit=crop" alt="Electronics">
+                    <h3>Electronics</h3>
+                    <p>Up to 80% Off</p>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=200&h=200&fit=crop" alt="Home">
+                    <h3>Home & Furniture</h3>
+                    <p>Up to 70% Off</p>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=200&h=200&fit=crop" alt="Beauty">
+                    <h3>Beauty</h3>
+                    <p>Up to 60% Off</p>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=200&h=200&fit=crop" alt="Sports">
+                    <h3>Sports & Fitness</h3>
+                    <p>Up to 50% Off</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Best Sellers</h2>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section class="deals">
+        <div class="container">
+            <h2 class="section-title">Today's Deals</h2>
+            <div class="deals-grid">
+                <div class="deal-card">
+                    <div class="deal-timer">
+                        <span>Ends in: <span id="timer">12:34:56</span></span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=300&h=300&fit=crop" alt="Deal">
+                    <h3>Smartphone Deal</h3>
+                    <div class="price">
+                        <span class="current-price">₹15,999</span>
+                        <span class="original-price">₹25,999</span>
+                        <span class="discount">38% off</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">FlipMart Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Payments</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Cancellation & Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Policy</h3>
+                    <ul>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Terms Of Use</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FlipMart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
