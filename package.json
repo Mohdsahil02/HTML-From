@@ -1,0 +1,41 @@
+{
+  "name": "flipmart-ecommerce",
+  "version": "1.0.0",
+  "description": "A modern e-commerce website inspired by Flipkart with complete shopping functionality",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "npx http-server -p 8000 -o",
+    "build": "echo 'Static website - no build required'",
+    "test": "echo 'Testing functionality manually in browser'"
+  },
+  "keywords": [
+    "ecommerce",
+    "flipkart",
+    "shopping",
+    "responsive",
+    "javascript",
+    "html",
+    "css",
+    "cart",
+    "products"
+  ],
+  "author": "FlipMart Developer",
+  "license": "MIT",
+  "homepage": ".",
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
